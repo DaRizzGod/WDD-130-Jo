@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects From Classes</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    h3 {
+        background-color: #5b5fc7;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 250px 1fr; 
+        min-height: 100vh;
+    }
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(80, 80, 150);
+        padding-top: 20px;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+    }
+    .sidebar button {
+        background-color: #5b5fc7;
+        border-radius: 30px;
+    }
+    .sidebar a {
+        color: rgb(240, 240, 240);
+        text-decoration: none;
+        padding: 15px 20px;
+        font-size: 1.1em;
+        display: block;
+    }
+    .main-content {
+        background-color: rgb(80, 80, 150);
+        padding: 40px;
+    }
+    .project-card {
+        margin-bottom: 60px; 
+        scroll-margin-top: 20px;
+    }
+    .project-image {
+        background-color: #8faadd;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #7a9ac0;
+        overflow: hidden;
+        border-radius: 30px;
+    }
+    .project-image img {
+        max-width: 100%; 
+        max-height: 100%;
+        width: auto;      
+        height: auto;       
+        object-fit: contain;
+    }
+    .project-description {
+        background-color: rgb(72, 71, 158);
+        color: white;
+        padding: 20px;
+        margin-top: 10px;
+        border-radius: 30px;
+        font-size: 20px;
+    }
+</style>
+    <h3>Projects From Classes</h3>
+    <div class="container">
+        <nav class="sidebar">
+            <button><a href="#project1">Project 1</a></button>
+            <button><a href="#project2">Project 2</a></button>
+            <button><a href="#project3">Project 3</a></button>
+            <button><a href="#project4">Project 4</a></button>
+            <button><a href="#project5">Project 5</a></button>
+            <button><a href="#project6">Project 6</a></button>
+        </nav>
+
+        <div class="main-content">
+        <section id="project1" class="project-card">
+            <div class="project-image">
+            <img src="images/subpage2images/notes.png" alt="Simple note taking app: this was combining html, json and google firebase to run the application of being able to create/save your notes. It will also save your info when you login to the firebase database.">
+            </div>
+            <div class="project-description">
+                <p>Simple note taking app: this was combining html, json and google firebase to run the application of being able to create/save your notes. It will also save your info when you login to the firebase database.</p>
+            </div>
+        </section>
+        <section id="project2" class="project-card">
+            <div class="project-image">
+            <img src="images/subpage2images/nelson.png" alt="Prophet card: this is was creating a simple card but applying the principle of text, font, colors and alignments to make the card of the Prophet for The Church of Jesus Christ of Latter Day Saints.">
+            </div>
+            <div class="project-description">
+                <p>Prophet card: this is was creating a simple card but applying the principle of text, font, colors and alignments to make the card of the Prophet for The Church of Jesus Christ of Latter Day Saints.</p>
+            </div>
+        </section>
+        <section id="project3" class="project-card">
+            <div class="project-image">
+            <img src="images/subpage2images/favdevos.png" alt="My Favorite Devo: a small project that people could input in the boxes of their favorite speakers but any info of what they were saying.">
+            </div>
+            <div class="project-description">
+                <p>My Favorite Devo: a small project that people could input in the boxes of their favorite speakers but any info of what they were saying.</p>
+            </div>
+        </section>
+        <section id="project4" class="project-card">
+            <div class="project-image">
+            <img src="images/subpage2images/flags.png" alt="Grid Flags; this was a small project in to getting the flags color size and alignments right to be able to identify what country they were but to ensuring the text aligned to the flag.">
+            </div>
+            <div class="project-description">
+                <p>Grid Flags; this was a small project in to getting the flags color size and alignments right to be able to identify what country they were but to ensuring the text aligned to the flag.</p>
+            </div>
+        </section>
+        <section id="project5" class="project-card">
+            <div class="project-image">
+            <img src="images/subpage2images/leaderschurch.png" alt="General Conference pictures: this was teaching me about getting the images to align up with the seniorities but as well as getting the grid system to work so they weren't all over the place. Making our prophet picture the bigger one was another thing I learned.">
+            </div>
+            <div class="project-description">
+                <p>General Conference pictures: this was teaching me about getting the images to align up with the seniorities but as well as getting the grid system to work so they weren't all over the place. Making our prophet picture the bigger one was another thing I learned.</p>
+            </div>
+        </section>
+        <section id="project6" class="project-card">
+            <div class="project-image">
+            <img src="images/subpage2images/signup.png" alt="Scripture feed: this was a simple email subscription feed people could sign up for and they would something different based of the different books that was available to them.">
+            </div>
+            <div class="project-description">
+                <p>Scripture feed: this was a simple email subscription feed people could sign up for and they would something different based of the different books that was available to them.</p>
+        </section>
+        </div>
+    </div>
+</body>
+</html>
